@@ -1,0 +1,32 @@
+.main {
+    padding-right: 10rem;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    font-family: Source Sans Pro, sans-serif;
+
+}
+
+#navbarScrollingDropdown {
+    padding: 0 1rem 0 1rem;
+    font-family: Source Sans Pro, sans-serif;
+}
+
+.righttop {
+    font-family: Source Sans Pro, sans-serif;
+    
+}
+.d-flex {
+    min-width: 8rem;
+}
+
+.userconfig {
+    font-size: 1.5rem;
+}
+
+
+.logout {
+    font-size: 1.5rem;
+
+}
+

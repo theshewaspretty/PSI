@@ -1,0 +1,23 @@
+.mastercrum {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.contents {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: 26% 72%;
+    grid-column: auto auto;
+    column-gap: 2rem;    
+    grid-template-areas: 
+    "lt rt"
+    ;
+    /* grid config */
+    .sidebar {grid-area: 'lt';}
+    .component {grid-area: 'rt';}
+}
+
+.component {
+    border: 1px solid black;
+}

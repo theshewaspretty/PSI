@@ -1,0 +1,60 @@
+.Sidebar {
+    position: inherit;
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 100vh;
+}
+
+.sidebartoggle {
+    display: block;
+    float: right;
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    border: 0;
+    padding: 0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebarcontent {
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+
+.materialcode {
+    width: 100%;
+}
+
+.sidebarinbox {
+    border: 1px solid #a4a6a8;
+    margin-bottom: 1rem;
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* .sidebarinbox:focus-within {
+    border: 2px solid #33c824;
+} */
+
+.inboxcontent {
+    width: 80%;
+    height: 7vh;
+}
+
+.search {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border: none;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #33c824;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    
+}
