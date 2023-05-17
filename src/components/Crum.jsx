@@ -26,6 +26,11 @@ const StyledBreadcrumb = styled(Chip)(({ theme }) => {
   };
 }); // TypeScript only: need a type cast here because https://github.com/Microsoft/TypeScript/issues/26591
 
+const Location = () => {
+  var a = document.createElement("input");
+  return a;
+};
+
 function handleClick(event) {
   event.preventDefault();
   console.info('You clicked a breadcrumb.');
@@ -41,8 +46,9 @@ export default function Crum() {
           label="Home"
           icon={<HomeIcon fontSize="small" />}
         />
-        <StyledBreadcrumb component="text" href="#" label="마스터정보" />
+        <StyledBreadcrumb component="a" href="#" label={Location, "마스터정보"} />
         <StyledBreadcrumb
+          component="a"
           label="제품정보 등록/조회"
           deleteIcon={<ExpandMoreIcon />}
         />

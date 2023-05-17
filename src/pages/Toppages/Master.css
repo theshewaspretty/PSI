@@ -1,23 +1,173 @@
+/* 사이드바 경계 때매 일부러 넣음 */
+.contentwrapper {
+    margin-left: 0.3rem;
+    margin-bottom: 1rem;
+}
 .mastercrum {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
-.contents {
+
+.show-menu {
+    font-family: Source Sans Pro, sans-serif;
     display: grid;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow: hidden;
-    grid-template-columns: 26% 72%;
+    grid-template-columns: 25% 75%;
     grid-column: auto auto;
-    column-gap: 2rem;    
+    column-gap: 1.5rem;    
     grid-template-areas: 
     "lt rt"
     ;
     /* grid config */
     .sidebar {grid-area: 'lt';}
     .component {grid-area: 'rt';}
+    transition: all 0.5s;
+
+}
+
+.hide-menu {
+    font-family: Source Sans Pro, sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: 5% 95%;
+    grid-column: auto auto;
+    column-gap: 1.5rem;
+    grid-template-areas: 
+    "lt rt"
+    ;
+    /* grid config */
+    .sidebar {grid-area: 'lt';}
+    .component {grid-area: 'rt';}
+    transition: all 0.5s;
+}
+
+.hide-menu #buttontoggle {
+    float: left;
+    left: 35%;
+    position: relative;
+}
+
+.hide-menu .sidebarcontent {
+    margin-left: 1rem;
+}
+
+.hide-menu .contentsearch {
+    margin-left: 1rem;
+}
+
+.show-menu .gridtablemain {
+    width: 99%;
+}
+
+#buttontoggle:hover {
+    background-color: #a4a6a8;
+    color: #ffffff;
+    border-radius: 1rem;
+}
+
+#buttontoggle:active {
+    background-color: #33c824;
+}
+
+#buttontoggle {
+    position: inherit;
+    display: inline;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    z-index: 1;
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
 }
 
 .component {
-    border: 1px solid black;
+    display: grid;
+    height: 100%;
+    width: 97%;
+    padding: 1rem;
+    overflow: hidden;
+    grid-template-rows: 5% 90% 5%;
+    row-gap: 1rem;
+    grid-row: auto;
+    margin-right: 2rem;
+    border: 1px dotted #a4a6a8;
+    border-radius: 1rem;
+    overflow: scroll;
 }
+
+.componentsearchcondition {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-bottom: 1px dotted #a4a6a8;
+}
+
+.componentbuttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: auto;
+    flex-direction: row;
+}
+
+#componentbutton1, #componentbutton2, #componentbutton3, #componentbutton4 {
+    display: flex;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 1rem;
+    background-color: #33c824;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 1rem;
+}
+
+/* report page */
+.reportwrapper {
+    margin-right: 2rem;
+}
+
+.reportcomponent {
+    border: 1px dotted #a4a6a8;
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    padding-right: 2rem;
+    overflow: hidden;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-row: auto;
+    grid-template-areas: 
+    "lt ct rt"
+    "lb cb rb"
+    ;
+    .chart1 {grid-area: 'lt';}
+    .chart2 {grid-area: 'ct';}
+    .chart3 {grid-area: 'rt';}
+    .sales1 {grid-area: 'lb';}
+    .sales2 {grid-area: 'cb';}
+    .sales3 {grid-area: 'rb';}
+}
+
+.chart1, .chart2, .chart3, .sales1, .sales2, .sales3  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px dotted #a4a6a8;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+    align-items: center;
+    background-color: #ffffff;
+}
+

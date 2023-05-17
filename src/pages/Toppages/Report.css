@@ -1,0 +1,84 @@
+/* 사이드바 경계 때매 일부러 넣음 */
+.contentwrapper {
+    margin-left: 0.3rem;
+}
+.mastercrum {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.show-menu {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: 25% 75%;
+    grid-column: auto auto;
+    column-gap: 1.5rem;    
+    grid-template-areas: 
+    "lt rt"
+    ;
+    /* grid config */
+    .sidebar {grid-area: 'lt';}
+    .component {grid-area: 'rt';}
+    transition: all 0.5s;
+
+}
+
+.hide-menu {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: 5% 95%;
+    grid-column: auto auto;
+    column-gap: 1.5rem;
+    grid-template-areas: 
+    "lt rt"
+    ;
+    /* grid config */
+    .sidebar {grid-area: 'lt';}
+    .component {grid-area: 'rt';}
+    transition: all 0.5s;
+}
+
+.hide-menu #buttontoggle {
+    float: left;
+    left: 35%;
+    position: relative;
+}
+
+.hide-menu .sidebarcontent {
+    margin-left: 1rem;
+}
+
+.hide-menu .contentsearch {
+    margin-left: 1rem;
+}
+
+#buttontoggle:hover {
+    background-color: #a4a6a8;
+    color: #ffffff;
+    border-radius: 1rem;
+}
+
+#buttontoggle:active {
+    background-color: #33c824;
+}
+
+#buttontoggle {
+    position: inherit;
+    display: inline;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    z-index: 1;
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+.component {
+    border: 1px solid black;
+    margin-right: 2rem;
+}

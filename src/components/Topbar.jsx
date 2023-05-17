@@ -1,13 +1,16 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Topbar.css'
-import { IoIosLogOut, IoMdBody } from "react-icons/io";
+import { IoIosLogOut, IoMdContact, IoMdSwitch } from "react-icons/io";
 
 function Topbar() {
+
+  const logoutclick = () => {
+    alert('로그아웃 되었습니다.')
+  };
+
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -39,7 +42,7 @@ function Topbar() {
             </NavDropdown>
 
             <NavDropdown title="리포트" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">월별종합 MOS</NavDropdown.Item>
+              <NavDropdown.Item href="/Report">월별종합 MOS</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">이슈품목 조회</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -61,17 +64,17 @@ function Topbar() {
 
           {/* 아이콘 */}
           <Nav className='righttop'>
-            <Nav.Link href="/123">
+            <Nav.Link href="/Admin">
                 <div className="admin">
-                관리자
+                  <IoMdSwitch />
                 </div>
             </Nav.Link>
-            <Nav.Link href="/1234">
+            <Nav.Link href="/UserConfig">
               <div className="userconfig">
-              <IoMdBody />
+              <IoMdContact />
               </div>
               </Nav.Link>
-            <Nav.Link eventKey={2} href="/">
+            <Nav.Link eventKey={2} href="/" onClick={logoutclick}>
               <div className="logout">
               <IoIosLogOut />
               </div>

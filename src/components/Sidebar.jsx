@@ -1,41 +1,41 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Sidebar.css'
 import DatePicker from './DatePicker';
-import MonthPicker from './MonthPicker';
-
+import ProductCode from './ProductCode';
 
 const Sidebar = () => {
+
   return (
-    <div className='Sidebar'>
-        <button className="sidebartoggle" >
-          &#9776;
-        </button>
-      <div className="sidebarcontent">
-        <div className="sidebarmonth">
-          대상월<br />
-          <div className="sidebarinbox" >
-            <DatePicker />
-            <MonthPicker />
+    <div className="Sidebar">
+      {/* 열렸을때 영역 */}
+      <div className="SidebarON">
+        <div className="sidebarcontent">
+          <div className="sidebarmonth">
+            대상월<br />
+            <div className="sidebarinbox" >
+              <DatePicker />
+            </div>
           </div>
-        </div>
-        <div className="materialcode">
+          <div className="materialcode">
           제품코드<br />
-          <div className="sidebarinbox">
-            ""
+            <div className="sidebarinbox">
+              <ProductCode />
+            </div>
+          </div>
+          <div className="materialname">
+            제품명<br />
+            <div className="sidebarinbox">
+              <ProductCode />
+            </div>
           </div>
         </div>
-        <div className="materialname">
-          제품명<br />
-          <div className="sidebarinbox">
-            ""
-          </div>
-        </div>
-        <div className="contentsearch">
-          <button className='search'>
-          조회
+      <div className="contentsearch">
+          <button className='search' id='searchtoggle'>
+            조회
           </button>
-        </div>
       </div>
+      </div>
+      {/* 닫혔을때 영역 */}
     </div>
   )
 }

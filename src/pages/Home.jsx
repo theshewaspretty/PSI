@@ -9,18 +9,18 @@ const Home = () => {
         <Topbar />
       </div>
       <div className="Homebody">
-        <div className="body">
-          <div className="lefttop">
-          lefttop
+        <div className="Homebody1">
+          <div className="homelefttop">
+            lefttop
           </div>
-          <div className="righttop">
-          righttop
+          <div className="homerighttop">
+            righttop
           </div>
-          <div className="leftbottom">
-          leftbottom
+          <div className="homeleftbottom">
+            leftbottom
           </div>
-          <div className="rightbottom">
-          rightbottom
+          <div className="homerightbottom">
+            rightbottom
           </div>
         </div>
       </div>

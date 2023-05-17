@@ -1,6 +1,6 @@
 .Homebody {
 
-    background-color: #EAEAE9;
+    background-color: #ffffff;
         /* gradient bg */
 
     /* background:   
@@ -15,14 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 
-.body {
+.Homebody1 {
+    background-color: #f8f9fa;
     display: grid;
     height: 100%;
     width: 100%;
+    margin: 2rem 1rem 1rem 1rem;
+    border: 1px solid #a4a6a8;
+    padding: 2rem;
+    border-radius: 1rem;
     grid-template-columns: 50% 50%;
     grid-row: auto auto;
     row-gap: 1rem;
@@ -35,6 +39,23 @@
     .lefttop {grid-area: 'lt';}
     .righttop {grid-area: 'rt';}
     .leftbottom {grid-area: 'lb';}
-    .rightbottom {grid-area: 'rb';}
+    .rightbottom {grid-area: 'rb';};
+
 }
 
+.homelefttop, .homerighttop, .homeleftbottom, .homerightbottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px dotted #a4a6a8;
+    border-radius: 1rem;
+    background: linear-gradient(
+        106.37deg,
+        #f5f5f5 29.63%,
+        #A4CE84 51.55%,
+        #f5f5f5 90.85%
+    );
+    font-weight: 700;
+    cursor: pointer;
+}
