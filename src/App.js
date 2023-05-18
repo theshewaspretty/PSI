@@ -7,6 +7,9 @@ import Master from "./pages/Toppages/Master";
 import Report from "./pages/Toppages/Report";
 import UserConfig from "./pages/UserConfig";
 import Admin from "./pages/Admin";
+import Issue from "./pages/Toppages/Issue";
+import Mos from "./pages/Toppages/Mos";
+
 
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
             <Route path="/Home" element={<Home />} />
             <Route path="/Master" element={<Master />} />
             <Route path="/Report" element={<Report />} />
+            <Route path="/Issue" element={<Issue />} />
+            <Route path="/Mos" element={<Mos />} />
+
 
               {/* Top bar 마지막 */}
             <Route path="/Admin" element={<Admin />} />

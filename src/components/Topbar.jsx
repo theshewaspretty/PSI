@@ -42,11 +42,11 @@ function Topbar() {
             </NavDropdown>
 
             <NavDropdown title="리포트" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/Report">월별종합 MOS</NavDropdown.Item>
+              <NavDropdown.Item href="/MOS">월별종합 MOS</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">이슈품목 조회</NavDropdown.Item>
+              <NavDropdown.Item href="/Issue">이슈품목 조회</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">재고현황</NavDropdown.Item>
+              <NavDropdown.Item href="Report">재고현황</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">판매실적</NavDropdown.Item>
               <NavDropdown.Divider />

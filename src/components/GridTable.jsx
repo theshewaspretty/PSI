@@ -6,7 +6,7 @@ import 'handsontable/dist/handsontable.full.min.css';
 // register Handsontable's modules
 registerAllModules();
 
-const gridTable = () => {
+const GridTable = () => {
 
   const data = new Array(100) // number of rows
   .fill()
@@ -34,4 +34,4 @@ const gridTable = () => {
   )
 }
 
-export default gridTable
+export default GridTable
