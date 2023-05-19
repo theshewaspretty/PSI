@@ -5,6 +5,7 @@
     box-sizing: border-box;
     position: sticky;
     margin-bottom: 1rem;
+    z-index: 2;
 }
 
 #buttonstyle {
@@ -16,3 +17,4 @@
     color: #33c824;
 }
 
+/* click to submit */

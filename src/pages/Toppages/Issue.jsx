@@ -31,7 +31,10 @@ const Issue = () => {
                     <div className="Issuecomponent">
                         <div className="issue1">
                             <h6>품절해소 제품</h6>
-                            <GridTable />
+                            <GridTable 
+
+                            />
+                           
                         </div>
                         <div className="issue2">
                             <h6>품절 중 제품</h6>

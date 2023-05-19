@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Topbar from '../../components/Topbar'
 import Sidebar from '../../components/Sidebar'
 import Crum from '../../components/Crum'
-import GridTable from '../../components/GridTable'
+import Gridtable from '../../components/GridTable'
 
 const Issue = () => {
 
@@ -13,9 +13,9 @@ const Issue = () => {
     };
   
   return (
-    <div className='Issue'>
+    <div className='Mos'>
         <Topbar />
-        <div className="Issuewrapper">
+        <div className="Moswrapper">
             <div className="mastercrum">
                 <Crum />
             </div>
@@ -27,10 +27,10 @@ const Issue = () => {
                 </button>
                     <Sidebar />
                 </div>
-                <div className="Moswrapper">
-                    <div className="Moscomponent">
-                        <h6>단위: 수량 판매구분: 처방실적</h6>
-                        <GridTable />
+                <div className="moswrapper">
+                    <div className="moscomponent">
+                        <h6 id='moscomponenttitle'>단위: 수량 판매구분: 처방실적</h6>
+                            <Gridtable />
                         <div className="mosbuttons">
                             <button id='mosbutton1'>
                                 다운로드

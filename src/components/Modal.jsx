@@ -24,7 +24,7 @@ const Modal = () => {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        
+        tabindex:'2',
         },
       };
 

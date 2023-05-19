@@ -5,6 +5,14 @@ import ProductCode from './ProductCode';
 
 const Sidebar = () => {
 
+  const MaterialValue =() => {
+    
+  }
+
+  const MaterialCode =() => {
+
+  }
+
   return (
     <div className="Sidebar">
       {/* 열렸을때 영역 */}
@@ -18,13 +26,13 @@ const Sidebar = () => {
           </div>
           <div className="materialcode">
           제품코드<br />
-            <div className="sidebarinbox">
+            <div className="sidebarinbox" value={MaterialCode}>
               <ProductCode />
             </div>
           </div>
           <div className="materialname">
             제품명<br />
-            <div className="sidebarinbox">
+            <div className="sidebarinbox" value={MaterialValue}>
               <ProductCode />
             </div>
           </div>

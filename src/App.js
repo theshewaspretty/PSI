@@ -1,4 +1,4 @@
-import { react } from "react";
+import { react, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -9,12 +9,40 @@ import UserConfig from "./pages/UserConfig";
 import Admin from "./pages/Admin";
 import Issue from "./pages/Toppages/Issue";
 import Mos from "./pages/Toppages/Mos";
+// import Loading from "./components/Loading";
 
 
 
 function App() {
+  //  API 호출
+  // const [loading, setLoading] = useState(true);
+  // const mainApi = async () => {
+  //   setLoading(true);
+  //   try {
+  //     const response = await fetch('api url' , {
+  //       method: 'POST',
+  //       headers: {
+  //         Accept: 'application/json',
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(),
+  //     });
+
+  //     const result = await response.jsaon();
+  //     console.log('mainData, result');
+  //     setLoading(false);
+  //     } catch (error) {
+  //       window.alert(error);
+  //     }
+  // };
+
+  // useEffect(() => {
+  //   mainApi();
+  // }, []);
+
   return (
     <div className="App">
+      {/* {loading ? <Loading /> : null} */}
       <Router>
         <Routes>
             <Route path="/" element={<Login />} />

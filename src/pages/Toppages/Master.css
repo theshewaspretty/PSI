@@ -98,6 +98,7 @@
     border: 1px dotted #a4a6a8;
     border-radius: 1rem;
     overflow: scroll;
+    z-index: 0;
 }
 
 .componentsearchcondition {
@@ -199,14 +200,16 @@
 }
 
 .issue1, .issue2, .issue3 {
-    display: flex;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 10% 90%;
+    grid-row: auto;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
     background-color: #ffffff;
     padding: 0.5rem;
     border: 1px dotted #a4a6a8;
     border-radius: 1rem;
+    z-index: 0;
 }
 
 .issuebutton {
@@ -223,11 +226,12 @@
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.Moswrapper {
+.moswrapper {
     margin-right: 1.5rem;
+    z-index: 0;
 }
 
-.Moscomponent {
+.moscomponent {
     border: 1px dotted #a4a6a8;
     background-color: #f8f9fa;
     border-radius: 1rem;
@@ -235,10 +239,15 @@
     width: 100%;
     padding: 1rem;
     padding-right: 1rem;
-    overflow: hidden;
-    display: flex;
+    overflow: scroll;
+    display: grid;
+    grid-row: auto;
     flex-direction: column;
 }
+
+#moscomponenttitle {
+}
+
 .mosbuttons {
     margin-top: 1rem;
     display: flex;
@@ -258,3 +267,4 @@
     border-radius: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
+
