@@ -1,0 +1,29 @@
+.comcomwrapper {
+    position: inherit;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid black;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-image:
+    linear-gradient(#DEDFE3 2%, #AEB3B9 95%),
+    radial-gradient(33% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+    background-image: linear-gradient(-180deg, #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%); */
+}
+
+.comcombutton {
+    padding: 1rem;
+}
+
+
+.comcombar2 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.comcombarcomponent {
+    background-color: beige;
+}

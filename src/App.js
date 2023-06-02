@@ -6,9 +6,11 @@ import Loginchange from "./pages/Loginchange";
 import Master from "./pages/Toppages/Master";
 import Report from "./pages/Toppages/Report";
 import UserConfig from "./pages/UserConfig";
-import Admin from "./pages/Admin";
 import Issue from "./pages/Toppages/Issue";
 import Mos from "./pages/Toppages/Mos";
+import Admin from "./pages/Toppages/Admin";
+import Com from "./Com";
+import ComCom from "./Sketch/ComCom";
 // import Loading from "./components/Loading";
 
 
@@ -57,6 +59,10 @@ function App() {
               {/* Top bar 마지막 */}
             <Route path="/Admin" element={<Admin />} />
             <Route path="/UserConfig" element={<UserConfig />} />
+
+            {/* component 모음집 */}
+            <Route path="/com" element={<Com />} />
+            <Route path="/comcom" element={<ComCom />} />
 
 
 
